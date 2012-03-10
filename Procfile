@@ -1,1 +1,1 @@
-web: node app.js
+pubsub: node app.js
