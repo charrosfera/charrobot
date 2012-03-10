@@ -1,16 +1,16 @@
 <html>
     <head>
-        <title>Socket.io example</title>
+        <title>Charrobot test</title>
         <script src="/socket.io/socket.io.js"></script>
         <script>
             var socket = io.connect('http://localhost');
-            socket.on('news', function (data) {
-                console.log(data);
-                socket.emit('my other event', { my: 'data' });
+            socket.emit('nickname', prompt('Introduce tu nombre'));
+            socket.on('welcome', function (data) {
+                alert(data);
             });
         </script>
     </head>
     <body>
-        <h1>Charrobot test</h1>
+        <h1>Proyecto Charrobot</h1>
     </body>
 </html>
